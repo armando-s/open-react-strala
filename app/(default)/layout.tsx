@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 
 import Footer from "@/components/ui/footer";
 
+
 export default function DefaultLayout({
   children,
 }: {
@@ -18,8 +19,9 @@ export default function DefaultLayout({
       disable: "phone",
       duration: 600,
       easing: "ease-out-sine",
+      animatedClassName: 'flip-horizontal-enter-active',
     });
-  });
+  }, []);
 
   return (
     <>

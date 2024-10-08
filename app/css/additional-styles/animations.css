@@ -1,0 +1,10 @@
+.flip-horizontal-enter {
+  opacity: 0;
+  transform: rotateY(90deg);
+  transition: opacity 0.3s, transform 0.6s;
+}
+
+.flip-horizontal-enter-active {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
